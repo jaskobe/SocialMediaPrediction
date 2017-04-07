@@ -391,9 +391,13 @@ footer{
         }
       }
     }
+
   }
 
-
+  .tip-txt{
+    color: $txt-black;
+    font-size: 12px;
+  }
 }
 //register modal
 #regModal{

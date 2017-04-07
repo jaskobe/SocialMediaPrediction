@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>SOCIAL MEDIA PREDICTION</title>
+  <title>Social Media Prediction (SMP)</title>
 
   <link rel="stylesheet" href="./dist/css/bootstrap.css">
   <link rel="stylesheet" href="dist/css/reset.css">
@@ -44,9 +44,9 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="challenge.html">CHALLENGE</a></li>
-          <li><a href="leaderboard.html">LEADERBOARD</a></li>
-          <li><a href="datasets.html">DATASETS</a></li>
+          <li class="active"><a href="challenge.html">Challenge</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="datasets.html">Datasets</a></li>
         </ul>
       </div>
     </nav>
@@ -76,6 +76,7 @@
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
                 The task is designed to predict the impact of sharing different posts for a publisher on social media. Given a photo (a.k.a. post) from a publisher, the goal is to automatically predict the popularity of the photo, e.g., view count for Flickr, Pin count for Pinterest, etc.
+
               </div>
             </div>
           </div>
@@ -89,7 +90,9 @@
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
               <div class="panel-body">
-                The task is designed to discover top-k popular posts on social media. Suppose to have a set of candidate photos and the history data of past photo sharing, the goal is to automatically predict which will be the most popular photos in the next day. The contestants are asked to develop their prediction system based on the SMP dataset provided by the Challenge (as training data), plus possibly additional public/private data, to address one or both of the two given tasks. For the evaluation purpose, a contesting system is asked to produce prediction results of popularity. The accuracy will be evaluated by pre-defined quantitative evaluation. The contestants need to introduce their systems and datasets in the conference.
+                The task is designed to discover top-k popular posts on social media. Suppose to have a set of candidate photos and the history data of past photo sharing, the goal is to automatically predict which will be the most popular photos in the next day.<br>
+                The contestants are asked to develop their prediction system based on the SMP dataset provided by the Challenge (as training data), plus possibly additional public/private data, to address one or both of the two given tasks. For the evaluation purpose, a contesting system is asked to produce prediction results of popularity. The accuracy will be evaluated by pre-defined quantitative evaluation. The contestants need to introduce their systems and datasets in the conference.
+
               </div>
             </div>
           </div>
@@ -117,7 +120,7 @@
       <article>
         <p>
           Each team is allowed to submit the results of at most three runs and selects one run as the primary run of the submission (we do not guarantee to evaluate additional runs), which will be measured for performance comparison across teams.<br>
-          Each submission is required to be formatted in a JSON File as follows.
+          Each submission is required to be formatted in a <b>JSON File</b> as follows.
         </p>
       </article>
       <div class="task-box">
@@ -126,7 +129,7 @@
             <div class="panel-heading" role="tab" id="submissionOne">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#submission" href="#submissionCollapseOne" aria-expanded="true" aria-controls="submissionCollapseOne">
-                  Task1: Popularity Prediction
+                  Task1 (ascending by post_id):
                 </a>
               </h4>
             </div>
@@ -148,8 +151,8 @@
                                 }
                         ],
                         "external_data": {
-                                "used": "true", # Visual Features. True indicates used of external data.
-                                "details": "VGG-19 pre-trained on ImageNet training set" # Details of your external data.
+                                "used": "true",
+                                "details": "VGG-19 pre-trained on ImageNet training set"
                         }
                     }
                   </code>
@@ -161,7 +164,7 @@
             <div class="panel-heading" role="tab" id="submissionTwo">
               <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#submission" href="#submissionCollapseTwo" aria-expanded="true" aria-controls="submissionCollapseOne">
-                  Task1: Popularity Prediction
+                  Task2 (ascending by post_id):
                 </a>
               </h4>
             </div>
@@ -185,8 +188,8 @@
                   }
                   ],
                   "external_data": {
-                  "used": "true", # Visual Features. True indicates used of external data.
-                  "details": "VGG-19 pre-trained on ImageNet training set" # Details of your external data.
+                  "used": "true",
+                  "details": "VGG-19 pre-trained on ImageNet training set"
                   }
                   }
                   </code>
