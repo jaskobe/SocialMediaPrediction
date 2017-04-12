@@ -3,8 +3,14 @@ $brand-green : #72b626;
 $txt-red : #e24545;
 $txt-black :#303030;
 //wrapper
+body{
+  background-color: #EDEDED;
+}
 .wrapper{
   padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 #d4d4d5;
+
 }
 @media all and (max-width: 767px){
   .wrapper{
@@ -301,11 +307,11 @@ footer{
     }
   }
   .sponsor-info{
-    width: 170px;
+    //width: 170px;
     margin: 20px auto;
     float: left;
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     img{
       width: 100%;
       margin-bottom: 20px;
@@ -326,8 +332,11 @@ footer{
     }
     p{
       color: #7c7c7c;
-      font-size: 12px;
+      font-size: 14px;
       margin-top: 10px;
+    }
+    &>div{
+      padding: 0 10px 0 0;
     }
   }
 
