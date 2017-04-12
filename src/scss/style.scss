@@ -260,7 +260,8 @@ footer{
   .contact-box{
     padding: 40px 20px 20px;
     .contact-card{
-      width: 75%;
+      //width: 75%;
+      min-height: 225px;
       overflow: hidden;
       margin: 10px 0;
       padding: 8px;
@@ -276,7 +277,7 @@ footer{
 
         h3{
           font-weight: 600;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 28px;
           text-align: left;
 
