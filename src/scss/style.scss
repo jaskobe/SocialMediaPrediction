@@ -17,6 +17,7 @@ header{
   padding-bottom: 10px;
   .logo{
     height: 60px;
+    display: inline-block;
     img{
       height: 100%;
     }
@@ -24,6 +25,7 @@ header{
   .contact-box{
     float: right;
     font-size: 12px;
+    margin-top: 32px;
     ul{
       overflow: hidden;
       text-align: left;
@@ -47,10 +49,10 @@ header{
           background-repeat: no-repeat;
 
           &.icon-reg{
-            background-position: -22px 0;
+            background-position: -22px 1px;
           }
           &.icon-mail{
-            background-position: 0 0;
+            background-position: 0 1px;
           }
 
         }
@@ -67,10 +69,10 @@ header{
             color: $brand-green;
           }
           .icon-reg{
-            background-position: -22px -14px;
+            background-position: -22px -13px;
           }
           .icon-mail{
-            background-position: 0 -14px;
+            background-position: 0 -13px;
           }
         }
 
@@ -86,10 +88,16 @@ header{
     .contact-box{
       float: left;
       text-align: center;
+      margin-top: 20px;
       ul{
         li{
           display: inline-block;
-          margin: 0 10px;
+          margin: 5px 10px 0;
+          border-right: none;
+          &:first-child{
+            border-right: none;
+
+          }
         }
       }
     }
@@ -168,7 +176,7 @@ footer{
     p{
       //display: inline-block;
       margin-bottom: 30px;
-      font-size: 12px;
+      font-size: 14px;
       letter-spacing: 1px;
       line-height: 20px;
       b{
@@ -252,10 +260,10 @@ footer{
   .contact-box{
     padding: 40px 20px 20px;
     .contact-card{
-      width: 90%;
+      width: 75%;
       overflow: hidden;
       margin: 10px 0;
-      padding: 12px;
+      padding: 8px;
       border-radius: 4px;
       box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
       img{
@@ -275,7 +283,7 @@ footer{
         }
         a,
         p{
-          font-size: 14px;
+          font-size: 12px;
           color: rgba(0,0,0,.4);
           margin: 4px 0;
         }
