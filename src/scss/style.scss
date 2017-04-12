@@ -24,7 +24,7 @@ header{
   }
   .contact-box{
     float: right;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 32px;
     ul{
       overflow: hidden;
@@ -249,7 +249,7 @@ footer{
         }
         p{
           padding-left:25px;
-          font-size:12px;
+          font-size:13px;
           line-height:25px;
           color: #666;
         }
@@ -303,7 +303,8 @@ footer{
   .sponsor-info{
     width: 170px;
     margin: 20px auto;
-    text-align: center;
+    float: left;
+    text-align: left;
     font-size: 14px;
     img{
       width: 100%;
@@ -322,6 +323,11 @@ footer{
         border-bottom: none;
         text-decoration: none;
       }
+    }
+    p{
+      color: #7c7c7c;
+      font-size: 12px;
+      margin-top: 10px;
     }
   }
 
